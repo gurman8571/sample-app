@@ -20,10 +20,10 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="{{route('create')}}">ADD EMPLOYEE </a>
+        <a class="nav-link" href="{{route('welcome')}}">ADD EMPLOYEE </a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="{{route('welcome')}}">VIEW EMPLOYEES</a>
+        <a class="nav-link" href="{{route('index')}}">VIEW EMPLOYEES</a>
       </li>
     
          @if (Route::has('login'))

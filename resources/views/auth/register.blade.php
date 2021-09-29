@@ -130,7 +130,7 @@ body {
     text-shadow: -7px 0px 5px rgba(0, 0, 0, 0.15);
 }
 </style>
-<x-nav/>
+<x-header/>
 <div class="register-page">
 
 
@@ -195,6 +195,9 @@ body {
                 <button type="submit">
                     {{ __('Register') }}
                 </button>
+                <a class="btn btn-link" href="{{ route('login') }}">
+                    <p class="message">already a user? login</p>
+                </a>
       
         </div>
     </form>

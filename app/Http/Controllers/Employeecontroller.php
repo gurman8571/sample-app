@@ -18,7 +18,7 @@ class Employeecontroller extends Controller
            $Employee->name = $req->input('name');
            $Employee->email = $req->input('email');
            $Employee->save();
-           return redirect()->route('welcome');
+           return redirect()->route('index');
       }
       public function index()
       {
@@ -27,7 +27,7 @@ class Employeecontroller extends Controller
        
     
              
-       return view('welcome',['data'=>$data]);
+       return view('index',['data'=>$data]);
 
       }
 

@@ -13,13 +13,11 @@ use App\Http\Controllers\EmployeeController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-route::view('create','Employee.Create')->name('create');
-Route::post('store', [EmployeeController::class, 'insert']);
-Route::get('/', [EmployeeController::class, 'index'])->name('welcome');
+route::view('/','welcome')->name('welcome')->middleware('auth');
+Route::post('store', [EmployeeController::class, 'insert'])->middleware('auth');
+Route::get('index', [EmployeeController::class, 'index'])->name('index')->middleware('auth');

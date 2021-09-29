@@ -1,4 +1,4 @@
-<x-nav/>
+<x-header/>
 @extends('layouts.app')
 
 @section('content')

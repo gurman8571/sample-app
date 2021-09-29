@@ -146,7 +146,7 @@ input[type="checkbox"]:hover {
 }
 
 </style>
-<x-nav/>
+<x-header/>
 <div class="login-page">
 
 
